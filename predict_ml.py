@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Nov 20 13:12:49 2018
-
-@author: user
-"""
-
 import warnings
 warnings.filterwarnings(action='ignore')
 import pandas as pd
@@ -15,7 +9,7 @@ import numpy as np
 from sklearn.model_selection import StratifiedKFold
 from imblearn.under_sampling import RandomUnderSampler
 
-data=pd.read_csv("./Data/kyrbs2017.csv",encoding="MS949",engine="python")
+data=pd.read_csv("./Data/alldata.csv",encoding="MS949",engine="python")
 
 data=data.drop(['BMI'],axis=1)
 data=data.drop(['INT_problem'],axis=1)
